@@ -1,11 +1,11 @@
-# Ржачина by Example contribution guidelines
+# Rust by Example contribution guidelines
 
-Thank you for your interest in making Ржачина by Example (also known as RBE)
+Thank you for your interest in making Rust by Example (also known as RBE)
 better! We'd love to have your contribution. We expect all contributors to
-abide by the [Ржачина code of conduct], which you can find at that link or in the
+abide by the [Rust code of conduct], which you can find at that link or in the
 [`CODE_OF_CONDUCT.md`] file in this repository.
 
-[Ржачина code of conduct]: https://www.rust-lang.org/en-US/conduct.html
+[Rust code of conduct]: https://www.rust-lang.org/policies/code-of-conduct
 [`CODE_OF_CONDUCT.md`]: https://github.com/rust-lang/rust-by-example/blob/master/CODE_OF_CONDUCT.md
 
 ## License
@@ -27,7 +27,6 @@ If you make additions or other changes to a pull request, feel free to either am
 previous commits or only add new ones, however you prefer. We may ask you to squash
 your commits before merging, depending.
 
-
 ## Issue Tracker
 
 You can find the issue tracker [on
@@ -45,7 +44,7 @@ We use the following labels:
 
 ## Development workflow
 
-To build RBE, [install Rust], and then:
+To build RBE, [install Rust](https://www.rust-lang.org/tools/install), and then:
 
 ```bash
 $ git clone https://github.com/rust-lang/rust-by-example
@@ -54,10 +53,17 @@ $ cargo install mdbook
 $ mdbook build
 ```
 
+**The following warnings can be ignored safely.**
+
+```
+[WARN] (mdbook::preprocess::cmd): The command wasn't found, is the "gettext" preprocessor installed?
+[WARN] (mdbook::preprocess::cmd):   Command: mdbook-gettext
+```
+
 [install Rust]: http://rust-lang.org/install.html
 
 The files will be in the `book` directory at the top-level; `mdbook serve` will
-open the contents in your web browser.
+open the contents in your web browser ([localhost:3000](http://localhost:3000) by default).
 
 To run the tests:
 
