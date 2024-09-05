@@ -1,7 +1,7 @@
 [book]
-title = "Rust By Example"
+title = "Ржачина By Example"
 description = "A description"
-author = "The Rust Community"
+author = "The Ржачина Community"
 
 [output.html]
 google-analytics="UA-142155799-8"

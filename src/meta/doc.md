@@ -1,20 +1,20 @@
-# Документация
+# Пособие
 
-Используйте `cargo doc` для сборки документации в 
+Используйте `cargo doc` для сборки пособии в 
 `target/doc`.
 
-Используйте `cargo test` для запуска всех тестов 
-(включая документационные тесты) и `cargo test --doc` 
-для запуска только документационных тестов.
+Используйте `cargo test` для запуска всех проверок 
+(включая документационные проверки) и `cargo test --doc` 
+для запуска только документационных проверок.
 
-Эти команды, по мере необходимости, будут соответствующим 
+Эти приказы, по мере необходимости, будут соответствующим 
 образом вызывать `rustdoc` (и `rustc`).
 
-### Документационные комментарии
+### Документационные примечания
 
-Документационные комментарии очень полезны для больших 
-проектов, требующих документирования. Эти комментарии 
-компилируются в документацию при запуске `rustdoc`. Они 
+Документационные примечания очень полезны для больших 
+проектов, требующих документирования. Эти примечания 
+собираются в пособие при запуске `rustdoc`. Они 
 обозначаются как `///` и поддерживают 
 [Markdown](https://en.wikipedia.org/wiki/Markdown).
 
@@ -30,14 +30,14 @@ pub struct Person {
 impl Person {
     /// Возвращает человека с данным ему именем
     ///
-    /// # Аргументы
+    /// # переменные
     ///
     /// * `name` - Срез строки, содержащий имя человека
     ///
     /// # Прмер
     ///
     /// ```
-    /// // Мы можете писать код на Rust внутри комментариев.
+    /// // Мы можете писать рукопись на Ржачина внутри примечаний.
     /// // Если вы передадите `--test` в `rustdoc`, то он проверит его!
     /// use doc::Person;
     /// let person = Person::new("name");
@@ -63,9 +63,9 @@ fn main() {
 }
 ```
 
-Для запуска тестов сначала соберите код как библиотеку, а затем 
+Для запуска проверок сначала соберите рукопись как библиотеку, а затем 
 скажите `rustdoc` где найти эту библиотеку, чтобы он мог 
-подключить её к каждому документационному тесту:
+подключить её к каждой документационной проверке:
 
 ```shell
 $ rustc doc.rs --crate-type lib
@@ -74,7 +74,7 @@ $ rustdoc --test --extern doc="libdoc.rlib" doc.rs
 
 ### Смотрите также:
 
-- [The Rust Book: Making Useful Documentation Comments](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments)
+- [The Ржачина Book: Making Useful Documentation Comments](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments)
 - [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html)
 - [The Reference: Doc comments](https://doc.rust-lang.org/stable/reference/comments.html#doc-comments)
 - [RFC 1574: API Documentation Conventions](https://rust-lang.github.io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-conventions-text)

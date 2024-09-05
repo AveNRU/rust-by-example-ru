@@ -1,23 +1,23 @@
 # Упаковка ошибок (`Box`)
 
-Чтобы написать простой код и при этом использовать 
+Чтобы написать простой рукопись и при этом использовать 
 оригинальные ошибки, необходимо упаковать 
 ([`Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html)) их.
-Минусом данного способа является то, что тип ошибок известен 
+Минусом данного способа является то, что вид ошибок известен 
 только во время выполнения программы, а не [определён 
 статически](https://doc.rust-lang.org/book/ch17-02-trait-objects.html#trait-objects-perform-dynamic-dispatch).
 
-Стандартная библиотека помогает упаковывать наши ошибки.
+Обычная библиотека помогает упаковывать наши ошибки.
 Это достигается за счёт того, что для `Box` 
-реализована конвертация из любого типа, реализующего типаж 
-`Error`, в типаж-объект `Box<Error>` 
+реализована преобразование из любого вида, реализующего сущность 
+`Error`, в сущность-объект `Box<Error>` 
 через [`From`](https://doc.rust-lang.org/std/convert/trait.From.html).
 
 ```rust,editable
 use std::error;
 use std::fmt;
 
-// Создадим псевдоним с типом ошибки `Box<error::Error>`.
+// Создадим псевдоним с видом ошибки `Box<error::Error>`.
 type Result<T> = std::result::Result<T, Box<error::Error>>;
 
 #[derive(Debug, Clone)]
@@ -70,4 +70,4 @@ fn main() {
 
 ### Смотрите также:
 
-[Динамическая диспетчеризация](https://doc.rust-lang.org/book/ch17-02-trait-objects.html#trait-objects-perform-dynamic-dispatch) и [типаж `Error`](https://doc.rust-lang.org/std/error/trait.Error.html)
+[Динамическая диспетчеризация](https://doc.rust-lang.org/book/ch17-02-trait-objects.html#trait-objects-perform-dynamic-dispatch) и [сущность `Error`](https://doc.rust-lang.org/std/error/trait.Error.html)

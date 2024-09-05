@@ -45,7 +45,7 @@ fn main() {
     }
 
     println!("`echo hello > a/b.txt`");
-    // Предыдущий `match` может быть написан проще, с помощью метода`unwrap_or_else`
+    // Предыдущий `match` может быть написан проще, с помощью способа`unwrap_or_else`
     echo("hello", &Path::new("a/b.txt")).unwrap_or_else(|why| {
         println!("! {:?}", why.kind());
     });
@@ -99,7 +99,7 @@ fn main() {
 
 ```
 
-Вот ожидаемый результат:
+Вот ожидаемый итог:
 
 ```shell
 $ rustc fs.rs && ./fs

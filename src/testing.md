@@ -1,19 +1,19 @@
-# Тестирование
+# Проверка
 
-Rust - это язык программирования, который очень заботится о корректности и
-включает в себя поддержку написания тестов программного обеспечения в самом языке.
+Ржачина - это язык программирования, который очень заботится о правильности и
+включает в себя поддержку написания проверок программного обеспечения в самом языке.
 
-Тестирование поставляется в трёх стилях:
+Проверка поставляется в трёх исполнениях:
 
-- [Модульное](testing/unit_testing.md) тестирование.
-- [Тестирование кода из примеров документации](testing/doc_testing.md).
-- [Интеграционное тестирование](testing/integration_testing.md).
+- [Модульное](testing/unit_testing.md) проверка.
+- [Проверка рукописи из примеров пособии](testing/doc_testing.md).
+- [Интеграционное проверка](testing/integration_testing.md).
 
-Также Rust поддерживает указание дополнительных зависимостей для тестов:
+Также Ржачина поддерживает указание дополнительных зависимостей для проверок:
 
 - [Dev-dependencies](testing/dev_dependencies.md)
 
 ## Смотрите также:
 
-- [Глава о тестировании](https://doc.rust-lang.org/book/ch11-00-testing.html) в "The Rust Programming Language"
-- [Описание API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) для тестирования примеров из документации.
+- [Глава о проверке](https://doc.rust-lang.org/book/ch11-00-testing.html) в "The Ржачина Programming Language"
+- [Описание API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) для проверок примеров из пособии.

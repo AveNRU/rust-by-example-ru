@@ -32,7 +32,7 @@ fn new_edition(book: &mut Book) {
 fn main() {
     // Создаём неизменяемую книгу в переменной `immutabook`
     let immutabook = Book {
-        // строковый литерал имеет тип `&'static str`
+        // строковый запись имеет вид `&'static str`
         author: "Douglas Hofstadter",
         title: "Gödel, Escher, Bach",
         year: 1979,
@@ -52,7 +52,7 @@ fn main() {
     
     // Ошибка! Нельзя заимствовать неизменяемый объект как изменяемый
     new_edition(&mut immutabook);
-    // ИСПРАВЬТЕ ^ Добавьте комментарий для этой строки
+    // ИСПРАВЬТЕ ^ Добавьте примечание для этой строки
 }
 ```
 

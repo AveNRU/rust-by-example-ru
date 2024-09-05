@@ -14,7 +14,7 @@ static PANGRAM: &'static str =
 "the quick brown fox jumped over the lazy dog\n";
 
 fn main() {
-    // Создадим команду `wc`
+    // Создадим приказ `wc`
     let process = match Command::new("wc")
                                 .stdin(Stdio::piped())
                                 .stdout(Stdio::piped())
@@ -23,12 +23,12 @@ fn main() {
         Ok(process) => process,
     };
 
-    // Запишем строку в `stdin` созданной команды.
+    // Запишем строку в `stdin` созданной приказы.
     //
-    // `stdin` имеет тип `Option<ChildStdin>`, но так как мы знаем, что экземпляр должен быть только один,
+    // `stdin` имеет вид `Option<ChildStdin>`, но так как мы знаем, что экземпляр должен быть только один,
     // мы можем напрямую вызвать `unwrap`.
     match process.stdin.unwrap().write_all(PANGRAM.as_bytes()) {
-        Err(why) => panic!("не удалось записать в stdin команды wc: {}",
+        Err(why) => panic!("не удалось записать в stdin приказы wc: {}",
                            why.description()),
         Ok(_) => println!("пангамма отправлена"),
     }
@@ -39,10 +39,10 @@ fn main() {
     // Это очень важно, иначе `wc` не начал бы обработку только что
     // отправленных данных.
 
-    // Поле `stdout` имеет тип `Option<ChildStdout>` и может быть извлечено.
+    // Поле `stdout` имеет вид `Option<ChildStdout>` и может быть извлечено.
     let mut s = String::new();
     match process.stdout.unwrap().read_to_string(&mut s) {
-        Err(why) => panic!("невозможно прочесть stdout команды wc: {}",
+        Err(why) => panic!("невозможно прочесть stdout приказы wc: {}",
                            why.description()),
         Ok(_) => print!("wc ответил:\n{}", s),
     }

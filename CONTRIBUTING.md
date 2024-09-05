@@ -1,11 +1,11 @@
-# Rust by Example contribution guidelines
+# Ржачина by Example contribution guidelines
 
-Thank you for your interest in making Rust by Example (also known as RBE)
+Thank you for your interest in making Ржачина by Example (also known as RBE)
 better! We'd love to have your contribution. We expect all contributors to
-abide by the [Rust code of conduct], which you can find at that link or in the
+abide by the [Ржачина code of conduct], which you can find at that link or in the
 [`CODE_OF_CONDUCT.md`] file in this repository.
 
-[Rust code of conduct]: https://www.rust-lang.org/en-US/conduct.html
+[Ржачина code of conduct]: https://www.rust-lang.org/en-US/conduct.html
 [`CODE_OF_CONDUCT.md`]: https://github.com/rust-lang/rust-by-example/blob/master/CODE_OF_CONDUCT.md
 
 ## License
