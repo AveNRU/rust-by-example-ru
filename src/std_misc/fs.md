@@ -62,7 +62,7 @@ fn main() {
     });
 
     println!("`ln -s ../b.txt a/c/b.txt`");
-    // Создаём символическую ссылку, получаем `io::Result<()>`
+    // Создаём знакическую ссылку, получаем `io::Result<()>`
     if cfg!(target_family = "unix") {
         unix::fs::symlink("../b.txt", "a/c/b.txt").unwrap_or_else(|why| {
         println!("! {:?}", why.kind());

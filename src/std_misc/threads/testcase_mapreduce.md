@@ -135,7 +135,7 @@ fn main() {
 ### Смотрите также:
 
 - [Потоки](../threads.md)
-- [вектора](../../std/vec.md) и [итераторы](../../trait/iter.md)
+- [вектора](../../std/vec.md) и [Повторители](../../trait/iter.md)
 - [замыкания](../../fn/closures.md), [семантика передачи владения](../../scope/move.md) и [перемещения (`move`) в замыканиях](https://doc.rust-lang.org/book/ch13-01-closures.html#closures-can-capture-their-environment)
 - [деструктуризация](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-to-break-apart-values) при присвоениях
 - [нотация turbofish](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect) в помощь рычагу вывода видов

@@ -52,7 +52,7 @@ fn main() {
 
     contacts.remove(&"Эшли"); 
 
-    // `HashMap::iter()` возвращает итератор, который в произвольном
+    // `HashMap::iter()` возвращает Повторитель, который в произвольном
     // порядке отдаёт пары `(&'a key, &'a value)`.
     for (contact, &number) in contacts.iter() {
         println!("Звоним {}: {}", contact, call(number)); 

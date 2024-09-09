@@ -51,7 +51,7 @@
     - [if/else](flow_control/if_else.md)
     - [loop](flow_control/loop.md)
         - [Вложенность и метки](flow_control/loop/nested.md)
-        - [Возврат из циклов](flow_control/loop/return.md)
+        - [Возврат из круговоротов](flow_control/loop/return.md)
     - [while](flow_control/while.md)
     - [for и range](flow_control/for.md)
     - [match](flow_control/match.md)
@@ -149,7 +149,7 @@
     - [Свойство `Derive`](trait/derive.md)
     - [Перегрузка приказчиков](trait/ops.md)
     - [Сущность `Drop`](trait/drop.md)
-    - [Итераторы](trait/iter.md)
+    - [Повторители](trait/iter.md)
     - [Сущность `Clone`](trait/clone.md)
 
 - [macro_rules!](macros.md)
@@ -179,7 +179,7 @@
         - [Упаковка ошибок (`Box`)](error/multiple_error_types/boxing_errors.md)
         - [Другие способы использования `?`](error/multiple_error_types/reenter_question_mark.md)
         - [Оборачивание ошибок](error/multiple_error_types/wrap_error.md)
-    - [Итерирование по `Result`](error/iter_result.md)
+    - [Повторение по `Result`](error/iter_result.md)
 
 - [Виды обычной библиотеки](std.md)
 
