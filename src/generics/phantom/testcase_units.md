@@ -44,7 +44,7 @@ struct Length<Unit>(f64, PhantomData<Unit>);
 impl<Unit> Add for Length<Unit> {
      type Output = Length<Unit>;
 
-    // add() возвращает новую структуру `Length`, содержащую сумму.
+    // add() возвращает новую стопку `Length`, содержащую сумму.
     fn add(self, rhs: Length<Unit>) -> Length<Unit> {
         // `+` вызывает реализацию `Add` для `f64`.
         Length(self.0 + rhs.0, PhantomData)
@@ -68,7 +68,7 @@ fn main() {
     println!("один фут + один фут = {:?} фута", two_feet.0);
     println!("один метр + один метр = {:?} метра", two_meters.0);
 
-    // Бессмысленные операции потерпят неудачу, как и должно быть:
+    // Бессмысленные действия потерпят неудачу, как и должно быть:
     // Ошибка времени сборки: несоответствие видов.
     //let one_feter = one_foot + one_meter;
 }
@@ -77,4 +77,4 @@ fn main() {
 ### Смотрите также:
 
 [Заимствование (`&`)](../../scope/borrow.md), [ограничения (`X: Y`)](../../generics/bounds.md), [перечисления](../../custom_types/enum.md), [`impl & self`](../../fn/methods.md),
-[перегрузка](../../trait/ops.md), [`ref`](../../scope/borrow/ref.md), [сущности (`X for Y`)](../../trait.md) и [кортежные структуры](../../custom_types/structs.md).
+[перегрузка](../../trait/ops.md), [`ref`](../../scope/borrow/ref.md), [сущности (`X for Y`)](../../trait.md) и [упорядоченные стопки](../../custom_types/structs.md).

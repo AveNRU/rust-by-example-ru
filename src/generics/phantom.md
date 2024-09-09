@@ -14,11 +14,11 @@
 ```rust,editable
 use std::marker::PhantomData;
 
-// Фантомная кортежная структура, которая имеет обобщение `A` со скрытым параметром `B`.
+// Фантомная упорядоченная стопка, которая имеет обобщение `A` со скрытым параметром `B`.
 #[derive(PartialEq)] // Разрешаем для данного вида сравнения.
 struct PhantomTuple<A, B>(A,PhantomData<B>);
 
-// Фантомная структура, которая имеет обобщение `A` со скрытым параметром `B`.
+// Фантомная стопка, которая имеет обобщение `A` со скрытым параметром `B`.
 #[derive(PartialEq)] // Разрешаем для данного вида сравнения.
 struct PhantomStruct<A, B> { first: A, phantom: PhantomData<B> }
 
@@ -55,4 +55,4 @@ fn main() {
 
 ### Смотрите также:
 
-[`derive`](../trait/derive.md), [`struct`](../custom_types/structs.md) и [кортежные структуры](../custom_types/structs.md)
+[`derive`](../trait/derive.md), [`struct`](../custom_types/structs.md) и [упорядоченные стопки](../custom_types/structs.md)

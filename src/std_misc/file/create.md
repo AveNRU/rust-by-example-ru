@@ -55,5 +55,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 (Как и в предыдущем примере, предлагаем вам проверить этот 
 рукопись с различными исходами отказа.)
 
-Существует структура [`OpenOptions`](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html), которая 
+Существует стопка [`OpenOptions`](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html), которая 
 может использоваться для настройки того, как файл будет открыт.

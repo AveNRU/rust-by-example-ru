@@ -55,7 +55,7 @@ fn main() {
 
 ### Смотрите также:
 
-[Функции][fn] и [структуры][structs]
+[Функции][fn] и [стопки][structs]
 
 [fn]: fn.html
 [structs]: custom_types/structs.html

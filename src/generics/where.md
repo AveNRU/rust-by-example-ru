@@ -52,7 +52,7 @@ fn main() {
 
 ### Смотрите также:
 
-[RFC][where], [`структуры`][struct], и [`сущности`][trait]
+[RFC][where], [`стопки`][struct], и [`сущности`][trait]
 
 [struct]: custom_types/structs.html
 [trait]: trait.html

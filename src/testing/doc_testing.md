@@ -35,10 +35,10 @@ pub fn add(a: i32, b: i32) -> i32 {
 ///
 /// # Panics
 ///
-/// Функция паникует, если второй переменная равен нулю.
+/// Функция вызывает сбой, если второй переменная равен нулю.
 ///
 /// ```rust,should_panic
-/// // паникует при делении на 0
+/// // вызывает сбой при делении на 0
 /// doccomments::div(10, 0);
 /// ```
 pub fn div(a: i32, b: i32) -> i32 {
@@ -72,7 +72,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
 Главная цель документационных проверок - служить примерами 
 предоставляемой возможности, что является одной из самых 
-важных [рекомендаций](https://rust-lang-nursery.github.io/api-guidelines/documentation.html#examples-use--not-try-not-unwrap-c-question-mark). Это позволяет использовать 
+важных [советов](https://rust-lang-nursery.github.io/api-guidelines/documentation.html#examples-use--not-try-not-unwrap-c-question-mark). Это позволяет использовать 
 примеры из пособии в качестве полных фрагментов рукописи. Но 
 использование `?` приведёт к ошибке сборки, так 
 как функция `main` возвращает `()` 
@@ -93,7 +93,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 /// # }
 /// # fn main() { // начало `main` которая выполняет `unwrap()`
 /// #    try_main().unwrap(); // вызов `try_main` и извлечение итога
-/// #                         // так что в случае ошибки этот проверка запаникует
+/// #                         // так что в случае ошибки этот проверка вызывает сбой
 /// # }
 pub fn try_div(a: i32, b: i32) -> Result<i32, String> {
     if b == 0 {
@@ -107,4 +107,4 @@ pub fn try_div(a: i32, b: i32) -> Result<i32, String> {
 ## Смотрите также:
 
 - [RFC505](https://github.com/rust-lang/rfcs/blob/master/text/0505-api-comment-conventions.md) по исполнению пособии
-- [Рекомендации для API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) по документационному проверке
+- [Советы для API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) по документационному проверке

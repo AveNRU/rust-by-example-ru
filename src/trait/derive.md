@@ -14,11 +14,11 @@
 - [`Debug`](https://doc.rust-lang.org/std/fmt/trait.Debug.html), чтобы отизмененять значение с помощью `{:?}`.
 
 ```rust,editable
-// `Centimeters`, кортежная структура, которую можно сравнить
+// `Centimeters`, упорядоченная стопка, которую можно сравнить
 #[derive(PartialEq, PartialOrd)]
 struct Centimeters(f64);
 
-// `Inches`, кортежная структура, которую можно навыводить
+// `Inches`, упорядоченная стопка, которую можно навыводить
 #[derive(Debug)]
 struct Inches(i32);
 
@@ -30,7 +30,7 @@ impl Inches {
     }
 }
 
-// `Seconds`, кортежная структура без дополнительных свойств
+// `Seconds`, упорядоченная стопка без дополнительных свойств
 struct Seconds(i32);
 
 fn main() {

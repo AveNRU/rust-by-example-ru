@@ -19,7 +19,7 @@
 
 - [Пользовательские виды](custom_types.md)
 
-    - [Структуры](custom_types/structs.md)
+    - [Стопки](custom_types/structs.md)
     - [Перечисления](custom_types/enum.md)
         - [Объявление `use`](custom_types/enum/enum_use.md)
         - [C-подобные перечисления](custom_types/enum/c_like.md)
@@ -55,11 +55,11 @@
     - [while](flow_control/while.md)
     - [for и range](flow_control/for.md)
     - [match](flow_control/match.md)
-        - [Деструктуризация](flow_control/match/destructuring.md)
+        - [Разбор](flow_control/match/destructuring.md)
             - [Упорядоченные ряды](flow_control/match/destructuring/destructure_tuple.md)
             - [Перечисления](flow_control/match/destructuring/destructure_enum.md)
             - [Указатели и ссылки](flow_control/match/destructuring/destructure_pointers.md)
-            - [Структуры](flow_control/match/destructuring/destructure_structures.md)
+            - [Стопки](flow_control/match/destructuring/destructure_structures.md)
         - [Ограничители образцов](flow_control/match/guard.md)
         - [Связывание](flow_control/match/binding.md)
     - [if let](flow_control/if_let.md)
@@ -83,7 +83,7 @@
 - [Модули](mod.md)
 
     - [Видимость](mod/visibility.md)
-    - [Видимость структуры](mod/struct_visibility.md)
+    - [Видимость стопки](mod/struct_visibility.md)
     - [Объявление `use`](mod/use.md)
     - [`super` и `self`](mod/super.md)
     - [Иерархия файлов](mod/split.md)
@@ -131,13 +131,13 @@
     - [Заимствование](scope/borrow.md)
         - [Mutability](scope/borrow/mut.md)
         - [Замораживание](scope/borrow/freeze.md)
-        - [Алиасинг](scope/borrow/alias.md)
+        - [Псевдонимы](scope/borrow/alias.md)
         - [ref паттерн](scope/borrow/ref.md)
     - [Времена жизни](scope/lifetime.md)
         - [Явное изложение](scope/lifetime/explicit.md)
         - [Функции](scope/lifetime/fn.md)
         - [Способы](scope/lifetime/methods.md)
-        - [Структуры](scope/lifetime/struct.md)
+        - [Стопки](scope/lifetime/struct.md)
         - [Сущности](scope/lifetime/trait.md)
         - [Ограничения](scope/lifetime/lifetime_bounds.md)
         - [Приведение (coercion)](scope/lifetime/lifetime_coercion.md)
@@ -220,11 +220,11 @@
     - [Интеграционное проверка](testing/integration_testing.md)
     - [dev-dependencies](testing/dev_dependencies.md)
 
-- [Unsafe операции](unsafe.md)
+- [Unsafe действия](unsafe.md)
 
 - [Совместимость](compatibility.md)
 
-    - [Сырые идентификаторы](compatibility/raw_identifiers.md)
+    - [Сырые определители](compatibility/raw_identifiers.md)
 
 - [Meta](meta.md)
 
