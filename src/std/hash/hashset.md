@@ -77,4 +77,4 @@ fn main() {
 }
 ```
 
-(Пример адаптирован из [пособии](https://doc.rust-lang.org/std/collections/struct.HashSet.html#method.difference))
+(Пример приспособлен из [пособия](https://doc.rust-lang.org/std/collections/struct.HashSet.html#method.difference))

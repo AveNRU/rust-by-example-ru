@@ -6,8 +6,8 @@
 Проверка поставляется в трёх исполнениях:
 
 - [Модульное](testing/unit_testing.md) проверка.
-- [Проверка рукописи из примеров пособии](testing/doc_testing.md).
-- [Интеграционное проверка](testing/integration_testing.md).
+- [Проверка рукописи из примеров пособия](testing/doc_testing.md).
+- [Встроенная проверка](testing/integration_testing.md).
 
 Также Ржачина поддерживает указание дополнительных зависимостей для проверок:
 
@@ -16,4 +16,4 @@
 ## Смотрите также:
 
 - [Глава о проверке](https://doc.rust-lang.org/book/ch11-00-testing.html) в "The Ржачина Programming Language"
-- [Описание API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) для проверок примеров из пособии.
+- [Описание API](https://rust-lang-nursery.github.io/api-guidelines/documentation.html) для проверок примеров из пособия.

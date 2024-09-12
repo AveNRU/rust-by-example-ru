@@ -55,4 +55,4 @@ fn main() {
 
 ### Смотрите также:
 
-[обычная библиотека (`std`)](https://doc.rust-lang.org/std/), [`mut`](variable_bindings/mut.md), [вывод видов](types/inference.md) и [затенение](variable_bindings/scope.md)
+[встроенная библиотека (`std`)](https://doc.rust-lang.org/std/), [`mut`](variable_bindings/mut.md), [вывод видов](types/inference.md) и [затенение](variable_bindings/scope.md)

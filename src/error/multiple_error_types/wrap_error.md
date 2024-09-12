@@ -32,7 +32,7 @@ impl error::Error for DoubleError {
     fn source(&self) -> Option<&(dyn error::Error + 'static)> {
         match *self {
             DoubleError::EmptyVec => None,
-            // Причиной ошибки является адаптированный вид. Здесь происходит
+            // Причиной ошибки является приспособленный вид. Здесь происходит
             // неявное преобразование к сущности `&error::Error`. Это работает
             // так как основной вид реализует сущность `Error`.
             DoubleError::Parse(ref e) => Some(e),

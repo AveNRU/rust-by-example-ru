@@ -11,7 +11,7 @@ use std::io::prelude::*;
 use std::os::unix;
 use std::path::Path;
 
-// Упрощённая реализация `% cat path`
+// Упрощённое исполнение `% cat path`
 fn cat(path: &Path) -> io::Result<String> {
     let mut f = File::open(path)?;
     let mut s = String::new();
@@ -21,14 +21,14 @@ fn cat(path: &Path) -> io::Result<String> {
     }
 }
 
-// Упрощённая реализация `% echo s > path`
+// Упрощённое исполнение `% echo s > path`
 fn echo(s: &str, path: &Path) -> io::Result<()> {
     let mut f = File::create(path)?;
 
     f.write_all(s.as_bytes())
 }
 
-// Упрощённая реализация `% touch path` (игнорирует существующие файлы)
+// Упрощённое исполнение `% touch path` (пренебрегает существующими файлами)
 fn touch(path: &Path) -> io::Result<()> {
     match OpenOptions::new().create(true).write(true).open(path) {
         Ok(_) => Ok(()),

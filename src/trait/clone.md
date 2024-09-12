@@ -23,24 +23,24 @@ fn main() {
     let copied_nil = nil;
 
     // Оба `Nil`s могут быть использованы независимо
-    println!("оригинал: {:?}", nil);
+    println!("подлинник: {:?}", nil);
     println!("копия: {:?}", copied_nil);
 
     // Объявим экземпляр `Pair`
     let pair = Pair(Box::new(1), Box::new(2));
-    println!("оригинал: {:?}", pair);
+    println!("подлинник: {:?}", pair);
 
     // Скопируем `pair` в `moved_pair`, перенаправляя ресурсы
     let moved_pair = pair;
     println!("копия: {:?}", moved_pair);
 
     // Ошибка! `pair` потеряла свои ресурсы
-    //println!("оригинал: {:?}", pair);
+    //println!("подлинник: {:?}", pair);
     // ЗАДАНИЕ ^ Попробуйте убрать примечания эту строку
 
     // Скопируем `moved_pair` в `cloned_pair` (включая ресурсы)
     let cloned_pair = moved_pair.clone();
-    // Сбросим оригинальную пару используя std::mem::drop
+    // Сбросим изначальную пару используя std::mem::drop
     drop(moved_pair);
 
     // Ошибка! `moved_pair` была сброшена

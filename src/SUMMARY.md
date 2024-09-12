@@ -74,7 +74,7 @@
         - [Анонимность видов](fn/closures/anonymity.md)
         - [Входные функции](fn/closures/input_functions.md)
         - [Как выходные параметры](fn/closures/output_parameters.md)
-        - [Примеры из обычной библиотеки](fn/closures/closure_examples.md)
+        - [Примеры из встроенной библиотеки](fn/closures/closure_examples.md)
             - [Iterator::any](fn/closures/closure_examples/iter_any.md)
             - [Iterator::find](fn/closures/closure_examples/iter_find.md)
     - [Функции высшего порядка](fn/hof.md)
@@ -181,7 +181,7 @@
         - [Оборачивание ошибок](error/multiple_error_types/wrap_error.md)
     - [Повторение по `Result`](error/iter_result.md)
 
-- [Виды обычной библиотеки](std.md)
+- [Виды встроенной библиотеки](std.md)
 
     - [`Box`, обойма  и куча](std/box.md)
     - [Вектора](std/vec.md)
@@ -195,7 +195,7 @@
         - [HashSet](std/hash/hashset.md)
     - [`Rc`](std/rc.md)
 
-- [Разное в обычной библиотеке](std_misc.md)
+- [Разное во встроенной библиотеке](std_misc.md)
 
     - [Потоки](std_misc/threads.md)
         - [Пример: map-reduce](std_misc/threads/testcase_mapreduce.md)
@@ -216,8 +216,8 @@
 - [Проверка](testing.md)
 
     - [Unit-проверка](testing/unit_testing.md)
-    - [Проверка пособии](testing/doc_testing.md)
-    - [Интеграционное проверка](testing/integration_testing.md)
+    - [Проверка пособия](testing/doc_testing.md)
+    - [Встроенная проверка](testing/integration_testing.md)
     - [dev-dependencies](testing/dev_dependencies.md)
 
 - [Unsafe действия](unsafe.md)
