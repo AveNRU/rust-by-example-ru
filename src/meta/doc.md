@@ -36,7 +36,7 @@ impl Person {
     /// # Прмер
     ///
     /// ```
-    /// // Мы можете писать рукопись на Ржачина внутри примечаний.
+    /// // Мы можете писать рукопись на Ржавчина внутри примечаний.
     /// // Если вы передадите `--test` в `rustdoc`, то он проверит его!
     /// use doc::Person;
     /// let person = Person::new("name");
@@ -73,7 +73,7 @@ $ rustdoc --test --extern doc="libdoc.rlib" doc.rs
 
 ### Смотрите также:
 
-- [The Ржачина Book: Making Useful Documentation Comments](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments)
+- [The Ржавчина Book: Making Useful Documentation Comments](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments)
 - [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html)
 - [The Reference: Doc comments](https://doc.rust-lang.org/stable/reference/comments.html#doc-comments)
 - [RFC 1574: API Documentation Conventions](https://rust-lang.github.io/rfcs/1574-more-api-documentation-conventions.html#appendix-a-full-conventions-text)

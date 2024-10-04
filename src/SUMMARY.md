@@ -80,13 +80,13 @@
     - [Функции высшего порядка](fn/hof.md)
     - [Расходящиеся функции](fn/diverging.md)
 
-- [Модули](mod.md)
+- [Разделы](mod.md)
 
     - [Видимость](mod/visibility.md)
     - [Видимость стопки](mod/struct_visibility.md)
     - [Объявление `use`](mod/use.md)
     - [`super` и `self`](mod/super.md)
-    - [Иерархия файлов](mod/split.md)
+    - [Порядок файлов](mod/split.md)
 
 - [Дополнения](crates.md)
 

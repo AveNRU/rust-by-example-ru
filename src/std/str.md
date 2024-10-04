@@ -58,7 +58,7 @@ fn main() {
 ```
 
 Больше способов `str` и `String` вы 
-можете найти в описании модулей [std::str](https://doc.rust-lang.org/std/str/) и 
+можете найти в описании разделов [std::str](https://doc.rust-lang.org/std/str/) и 
 [std::string](https://doc.rust-lang.org/std/string/).
 
 ## Записи и экранирование
@@ -165,4 +165,4 @@ fn main() {
 Для преобразования между кодировками знаков, посмотрите сущность [encoding](https://crates.io/crates/encoding).
 
 Более детальный список способов записи строковых записей и 
-экранирования знаков можно найти в [главе 'Tokens'](https://doc.rust-lang.org/reference/tokens.html) Ржачина Reference.
+экранирования знаков можно найти в [главе 'Tokens'](https://doc.rust-lang.org/reference/tokens.html) Ржавчина Reference.

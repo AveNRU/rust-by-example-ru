@@ -13,7 +13,7 @@
 Сейчас мы используем вставка `u32`, чтобы указать, что запись - беззнаковое целое
 число 32-х бит и вставка `i32` - знаковое целое 32-х битное число.
 
-Доступные приказчики и их предпочтение [в Ржавчине][ржачина op-prec] такой же как и в других
+Доступные приказчики и их предпочтение [в Ржавчине][ржавчина op-prec] такой же как и в других
 [C-подобных языках][op-prec].
 
 ```rust,editable
@@ -43,5 +43,5 @@ fn main() {
 }
 ```
 
-[ржачина op-prec]: https://doc.rust-lang.org/reference/expressions.html#expression-precedence
+[ржавчина op-prec]: https://doc.rust-lang.org/reference/expressions.html#expression-precedence
 [op-prec]: https://en.wikipedia.org/wiki/Operator_precedence#Programming_languages

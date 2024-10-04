@@ -62,4 +62,4 @@ fn main() {
 - `ty` (*вид*)
 - `vis` (*спецификатор видимости*)
 
-Полный список указателей, вы можете увидеть в [Ржачина Reference](https://doc.rust-lang.org/reference/macros-by-example.html).
+Полный список указателей, вы можете увидеть в [Ржавчина Reference](https://doc.rust-lang.org/reference/macros-by-example.html).

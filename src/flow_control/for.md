@@ -67,7 +67,7 @@ fn main() {
 
     for name in names.iter() {
         match name {
-            &"Ferris" => println!("Программисты Ржачина вокруг нас!"),
+            &"Ferris" => println!("Программисты Ржавчина вокруг нас!"),
             _ => println!("Привет {}", name),
         }
     }
@@ -82,7 +82,7 @@ fn main() {
 
     for name in names.into_iter() {
         match name {
-            "Ferris" => println!("Программисты Ржачина вокруг нас!"),
+            "Ferris" => println!("Программисты Ржавчина вокруг нас!"),
             _ => println!("Привет {}", name),
         }
     }
@@ -97,7 +97,7 @@ fn main() {
 
     for name in names.iter_mut() {
         *name = match name {
-            &mut "Ferris" => "Программисты Ржачина вокруг нас!",
+            &mut "Ferris" => "Программисты Ржавчина вокруг нас!",
             _ => "Привет",
         }
     }
